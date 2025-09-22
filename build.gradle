@@ -1,0 +1,58 @@
+plugins {
+    id 'fabric-loom' version '1.7.4'
+    id 'maven-publish'
+}
+
+sourceCompatibility = JavaVersion.VERSION_21
+targetCompatibility = JavaVersion.VERSION_21
+
+group = "com.example.slashblade"
+version = "1.0.0"
+archivesBaseName = "slashblade"
+
+repositories {
+    mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
+}
+
+dependencies {
+    // Minecraft + Yarn mappings
+    minecraft "com.mojang:minecraft:1.21"
+    mappings "net.fabricmc:yarn:1.21+build.1:v2"
+
+    // Fabric loader
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+
+    // Fabric API (最新版)
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21"
+
+    // (可选) 测试用 JUnit
+    testImplementation 'junit:junit:4.13.2'
+}
+
+loom {
+    splitEnvironmentSourceSets()
+
+    runs {
+        client {
+            client()
+            ideConfigGenerated = true
+            runDir = "run"
+        }
+        server {
+            server()
+            ideConfigGenerated = true
+            runDir = "run"
+        }
+    }
+}
+
+java {
+    withSourcesJar()
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${archivesBaseName}" }
+    }
+}

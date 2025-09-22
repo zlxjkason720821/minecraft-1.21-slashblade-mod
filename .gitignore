@@ -1,0 +1,33 @@
+# Gradle 缓存
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# 日志文件
+*.log
+
+# 操作系统生成的垃圾文件
+.DS_Store
+Thumbs.db
+
+# IDE 配置
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# 输出 Jar 包
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Eclipse 文件
+.classpath
+.project
+.settings/
+
+# 编译产物
+bin/
+out/

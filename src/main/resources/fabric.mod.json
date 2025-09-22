@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "slashblade",
+  "version": "${version}",
+  "name": "SlashBlade (Fabric 1.21)",
+  "description": "A lightweight katana mod: draw/sheath, dash slash, basic combo.",
+  "authors": ["YourName"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/slashblade/textures/item/katana.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.slashblade.SlashBladeMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric": "*",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  }
+}

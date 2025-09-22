@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  D",
+    " SR",
+    "S  "
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "R": { "item": "minecraft:redstone" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "slashblade:katana_red" }
+}

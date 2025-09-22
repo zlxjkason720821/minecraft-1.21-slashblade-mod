@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  L",
+    " SL",
+    "S  "
+  ],
+  "key": {
+    "L": { "item": "minecraft:lapis_lazuli" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "slashblade:katana_blue" }
+}

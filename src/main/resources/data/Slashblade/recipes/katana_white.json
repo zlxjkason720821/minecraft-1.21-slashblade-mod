@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  Q",
+    " SQ",
+    "S  "
+  ],
+  "key": {
+    "Q": { "item": "minecraft:quartz" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "slashblade:katana_white" }
+}
